@@ -5,6 +5,7 @@ with open("input.txt", "r") as f:
 
 for a in data:
     for b in data:
-        if a + b == 2020:
-            print(a*b)
-            exit()
+        for c in data:
+            if a + b + c== 2020:
+                print(f"{a} * {b} * {c} = {a*b*c}")
+                exit()
