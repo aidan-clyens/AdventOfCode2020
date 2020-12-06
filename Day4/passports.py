@@ -1,6 +1,3 @@
-import re
-
-
 def is_valid(passport):
     expected_keys = ["byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"]
     for k in expected_keys:
