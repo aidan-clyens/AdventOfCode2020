@@ -39,3 +39,15 @@ if __name__ == '__main__':
 
     print("Part 1:")
     print(max(seat_IDs))
+
+    print("Part 2:")
+    seat_IDs = sorted(seat_IDs)
+    expected_ID = seat_IDs[0]
+    for ID in seat_IDs:
+        if not ID == expected_ID:
+            print(expected_ID)
+            break
+
+        expected_ID += 1 
+
+
