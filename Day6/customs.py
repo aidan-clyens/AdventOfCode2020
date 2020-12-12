@@ -13,13 +13,13 @@ if __name__ == '__main__':
 
     total_sum = 0
     for group in groups: 
-        answers = []
+        answers = set()
         for person in group:
             for c in person:
-                if c not in answers:
-                    answers.append(c)
+                answers.add(c)
 
         total_sum += len(answers)
 
     print("Part 1:")
     print(total_sum)
+
